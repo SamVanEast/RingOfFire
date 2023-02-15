@@ -1,0 +1,49 @@
+.start_screen {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+
+    img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+}
+
+.start_screen_headline {
+    position: absolute;
+    top: 80px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 23px;
+    color: #800000;
+    font-size: 180px;
+    text-align: center;
+
+}
+
+.start_button {
+    position: absolute;
+    bottom: 150px;
+    width: 280px;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid #7f5250;
+    border-radius: 23px;
+
+    img {
+        border-radius: 20px;
+    }
+
+    &:hover {
+        cursor: pointer;
+        filter: brightness(1.1);
+    }
+}
