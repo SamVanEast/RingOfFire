@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "ringoffire-beaf5": {
+      "hosting": {
+        "RingOfFire": [
+          "ringoffire-beaf5"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "ringoffire-beaf5"
+  }
+}

@@ -24,12 +24,11 @@
     color: #800000;
     font-size: 180px;
     text-align: center;
-
 }
 
 .start_button {
     position: absolute;
-    bottom: 150px;
+    bottom: calc(100% - 90%);
     width: 280px;
     height: 70px;
     display: flex;
@@ -45,5 +44,27 @@
     &:hover {
         cursor: pointer;
         filter: brightness(1.1);
+    }
+}
+
+@media (max-width: 915px) {
+    .start_screen_headline {
+        font-size: 100px;
+    }
+
+    .start_button {
+        width: 200px;
+        height: 60px;
+    }
+}
+
+@media (max-width: 515px) {
+    .start_screen_headline {
+        font-size: 50px;
+    }
+
+    .start_button {
+        width: 150px;
+        height: 40px;
     }
 }

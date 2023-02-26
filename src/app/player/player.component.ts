@@ -5,7 +5,8 @@ import { Component, Input } from '@angular/core';
   templateUrl: './player.component.html',
   styleUrls: ['./player.component.scss']
 })
-export class PlayerComponent {
+export class PlayerComponent{
   @Input() name;
   @Input() playerAtive: boolean = false;
+
 }
