@@ -1,12 +1,17 @@
-<ng-container *ngIf="!mobile">
-    <app-player *ngFor="let player of game.players; let i = index" [ngStyle]="{'top.px': 100 + (i * 90)}"
-        [playerAtive]="i == game.currentPlayer" [name]="player" class="player_position"></app-player>
-</ng-container>
+<div *ngIf="!mobile" class="div_div_player">
+    <div class="div_player">
+        <app-player *ngFor="let player of game.players; let i = index" [ngStyle]="{'top.px': (i * 90)}"
+            [playerAtive]="i == game.currentPlayer" [name]="player" class="player_position"></app-player>
+    </div>
+</div>
 
-<ng-container *ngIf="mobile">
-<app-player-mobile *ngFor="let player of game.players; let i = index" [ngStyle]="{'top.px': 100 + (i * 60)}"
-    [playerAtive]="i == game.currentPlayer" [name]="player" class="player_position"></app-player-mobile>
-</ng-container>
+
+<div *ngIf="mobile" class="div_div_player">
+    <div class="div_player">
+        <app-player-mobile *ngFor="let player of game.players; let i = index" [ngStyle]="{'top.px':(i * 60)}"
+            [playerAtive]="i == game.currentPlayer" [name]="player" class="player_position"></app-player-mobile>
+    </div>
+</div>
 
 <div class="game_field">
     <div class="card_stack" *ngIf="game.gameCanStart">
