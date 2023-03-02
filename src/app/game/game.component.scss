@@ -72,6 +72,10 @@
     overflow: scroll;
 }
 
+.div_player::-webkit-scrollbar {
+    display: none;
+}
+
 .player_position {
     z-index: 1;
     position: absolute;
